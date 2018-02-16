@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		E753FA84202C7CF200F6BB1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FA83202C7CF200F6BB1C /* AppDelegate.swift */; };
 		E753FA86202C7CF200F6BB1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753FA85202C7CF200F6BB1C /* ViewController.swift */; };
-		E753FA89202C7CF200F6BB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753FA87202C7CF200F6BB1C /* Main.storyboard */; };
 		E753FA8B202C7CF200F6BB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E753FA8A202C7CF200F6BB1C /* Assets.xcassets */; };
 		E753FA8E202C7CF200F6BB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E753FA8C202C7CF200F6BB1C /* LaunchScreen.storyboard */; };
+		E790EBFB2033E35C00B118C3 /* SettingsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E790EBFA2033E35C00B118C3 /* SettingsCollectionViewController.swift */; };
+		E79D9C61202D8AE90084C406 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79D9C5F202D8AE90084C406 /* SettingsCollectionViewCell.swift */; };
+		E7DF9544203442C400423D75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DF9543203442C400423D75 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E753FA80202C7CF200F6BB1C /* SOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E753FA83202C7CF200F6BB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E753FA85202C7CF200F6BB1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E753FA88202C7CF200F6BB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E753FA8A202C7CF200F6BB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E753FA8D202C7CF200F6BB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E753FA8F202C7CF200F6BB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E790EBFA2033E35C00B118C3 /* SettingsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewController.swift; sourceTree = "<group>"; };
+		E79D9C5F202D8AE90084C406 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7DF9543203442C400423D75 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		E753FA82202C7CF200F6BB1C /* SOS */ = {
 			isa = PBXGroup;
 			children = (
+				E79454962037231C00B66A0F /* VC */,
+				E79454972037233100B66A0F /* Extra */,
 				E753FA83202C7CF200F6BB1C /* AppDelegate.swift */,
-				E753FA85202C7CF200F6BB1C /* ViewController.swift */,
-				E753FA87202C7CF200F6BB1C /* Main.storyboard */,
 				E753FA8A202C7CF200F6BB1C /* Assets.xcassets */,
 				E753FA8C202C7CF200F6BB1C /* LaunchScreen.storyboard */,
 				E753FA8F202C7CF200F6BB1C /* Info.plist */,
 			);
 			path = SOS;
+			sourceTree = "<group>";
+		};
+		E79454962037231C00B66A0F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E79D9C5F202D8AE90084C406 /* SettingsCollectionViewCell.swift */,
+				E790EBFA2033E35C00B118C3 /* SettingsCollectionViewController.swift */,
+				E753FA85202C7CF200F6BB1C /* ViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		E79454972037233100B66A0F /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				E7DF9543203442C400423D75 /* Extensions.swift */,
+			);
+			name = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +118,7 @@
 				TargetAttributes = {
 					E753FA7F202C7CF200F6BB1C = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 6M935XJ5BE;
+						DevelopmentTeam = XB4RF5FU56;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,7 +148,6 @@
 			files = (
 				E753FA8E202C7CF200F6BB1C /* LaunchScreen.storyboard in Resources */,
 				E753FA8B202C7CF200F6BB1C /* Assets.xcassets in Resources */,
-				E753FA89202C7CF200F6BB1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,21 +159,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E753FA86202C7CF200F6BB1C /* ViewController.swift in Sources */,
+				E7DF9544203442C400423D75 /* Extensions.swift in Sources */,
 				E753FA84202C7CF200F6BB1C /* AppDelegate.swift in Sources */,
+				E79D9C61202D8AE90084C406 /* SettingsCollectionViewCell.swift in Sources */,
+				E790EBFB2033E35C00B118C3 /* SettingsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E753FA87202C7CF200F6BB1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E753FA88202C7CF200F6BB1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E753FA8C202C7CF200F6BB1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,7 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M935XJ5BE;
+				DEVELOPMENT_TEAM = XB4RF5FU56;
 				INFOPLIST_FILE = SOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SallyL.SOS;
@@ -274,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M935XJ5BE;
+				DEVELOPMENT_TEAM = XB4RF5FU56;
 				INFOPLIST_FILE = SOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SallyL.SOS;
@@ -302,6 +318,7 @@
 				E753FA94202C7CF200F6BB1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
